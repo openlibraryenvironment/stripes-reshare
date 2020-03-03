@@ -1,0 +1,10 @@
+{
+  "name": "@folio/stripes-reshare",
+  "version": "1.0.0",
+  "description": "Common elements used by ReShare's Stripes modules",
+  "repository": "openlibraryenvironment/stripes-reshare",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
