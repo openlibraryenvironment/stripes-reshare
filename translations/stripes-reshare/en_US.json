@@ -16,6 +16,8 @@
   "states.REQ_EXPECTS_TO_SUPPLY": "Expects to supply",
   "states.REQ_SHIPPED_TO_SUPPLIER":"Return shipped to supplier",
   "states.REQ_CONDITIONAL_ANSWER_RECEIVED":"Conditional reply recieved",
+  "states.REQ_CANCEL_PENDING":"Cancel pending",
+  "states.REQ_CANCELLED":"Cancelled",
 
   "states.RES_IDLE":"New request",
   "states.RES_NEW_AWAIT_PULL_SLIP":"Awaiting pull slip printing",
