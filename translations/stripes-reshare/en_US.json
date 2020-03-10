@@ -29,5 +29,7 @@
   "states.RES_ITEM_RETURNED":"Return shipped to supplier",
   "states.RES_COMPLETE":"Request complete",
   "states.RES_UNFILLED":"Request not suppliled",
-  "states.RES_PENDING_CONDITIONAL_ANSWER":"Responded conditionally, awaiting confirmation"
+  "states.RES_PENDING_CONDITIONAL_ANSWER":"Responded conditionally, awaiting confirmation",
+  "states.RES_CANCEL_REQUEST_RECEIVED":"Cancel request recieved"
 }
+
