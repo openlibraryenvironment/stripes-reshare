@@ -22,6 +22,9 @@
   "actions.supplierPrintPullSlip.success": "Pull slip marked as printed.",
   "actions.supplierPrintPullSlip.error": "Error marking pull slip as printed.",
   "actions.supplierRespondToCancel": "Respond to cancellation",
+  "actions.requesterAgreeConditions": "Agree to loan conditions",
+  "actions.requesterRejectConditions": "Reject loan conditions",
+  "actions.supplierMarkConditionsAgreed": "Mark loan conditions as agreed",
 
   "states.REQ_IDLE":"New request",
   "states.REQ_VALIDATED":"Request validated",
