@@ -46,6 +46,7 @@
   "states.REQ_SHIPPED_TO_SUPPLIER":"Return shipped to supplier",
   "states.REQ_CONDITIONAL_ANSWER_RECEIVED":"Loan conditions received",
   "states.REQ_CANCEL_PENDING":"Cancel pending",
+  "states.REQ_CANCELLED_WITH_SUPPLIER":"Cancelled with previous supplier",
   "states.REQ_CANCELLED":"Cancelled",
 
   "states.RES_IDLE":"New request",
