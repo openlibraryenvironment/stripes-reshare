@@ -5,6 +5,8 @@
   "actions.patronReturnedItem.success": "Item marked as returned from patron.",
   "actions.patronReturnedItem.error": "Error marking item as returned patron.",
   "actions.requesterCancel": "Cancel request",
+  "actions.requesterCancel.success": "Successfully submitted cancellation request",
+  "actions.requesterCancel.error": "Failed to submit cancellation request",
   "actions.requesterReceived": "Mark received",
   "actions.requesterReceived.success": "Item marked as received.",
   "actions.requesterReceived.error": "Error marking item as received.",
