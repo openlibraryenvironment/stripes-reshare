@@ -1,5 +1,5 @@
 {
-  "requestStatus": "Request status",
+  "requestState": "Request state",
 
   "actions.patronReturnedItem": "Mark returned from patron",
   "actions.patronReturnedItem.success": "Item marked as returned from patron.",
