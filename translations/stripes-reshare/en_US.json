@@ -65,6 +65,8 @@
   "states.RES_COMPLETE":"Request complete",
   "states.RES_UNFILLED":"Request not supplied",
   "states.RES_PENDING_CONDITIONAL_ANSWER":"Conditions sent to requester, awaiting confirmation",
-  "states.RES_CANCEL_REQUEST_RECEIVED":"Cancel request recieved"
+  "states.RES_CANCEL_REQUEST_RECEIVED":"Cancel request recieved",
+
+  "states.undefined":"ERROR: State undefined"
 }
 
