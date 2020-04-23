@@ -68,25 +68,25 @@ class CatalogInfo extends React.Component {
     const idKey = `ui-rs.information.${hasISSN ? 'issn' : 'isbn'}`;
     const idValue = hasISSN ? issn : isbn;
 
+    const inventoryLink = (
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href={`${stripes.config.sharedIndexUI}/inventory/view/${id}`}
+      >
+        View Record
+      </a>
+    );
+
     return (
       <Card
         id={`${this.props.id}-card`}
         headerStart="Catalog"
+        headerEnd={inventoryLink}
         roundedBorder
         cardClass={css.catalogCard}
         headerClass={css.catalogCardHeader}
       >
-        <Row>
-          <Col xs={12} style={{ textAlign: 'right' }}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={`${stripes.config.sharedIndexUI}/inventory/view/${id}`}
-            >
-              View Record
-            </a>
-          </Col>
-        </Row>
         <Row>
           <Col xs={6}>
             <KeyValue
