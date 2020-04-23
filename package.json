@@ -7,6 +7,9 @@
   "engines": {
     "node": ">=10.0.0"
   },
+  "scripts": {
+    "lint": "eslint ."
+  },
   "dependencies": {
     "ky": "^0.19.0",
     "lodash": "^4.17.4",
