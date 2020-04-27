@@ -29,7 +29,7 @@ const DirectLink = ({ children, component, to, ...rest }) => {
 };
 
 DirectLink.propTypes = {
-  component: PropTypes.element.isRequired,
+  component: PropTypes.element,
   to: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.string
