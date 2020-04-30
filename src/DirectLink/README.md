@@ -4,7 +4,9 @@
 `Link` but in the process will rewrite the `to` prop as an object and add a
 boolean `state: true` property. This allow the linked route to determine if the
 user has arrived there directly via an explicit in-app link vs. other
-navigation such as switching between apps or directly entering the URL.
+navigation such as switching between apps or directly entering the URL. An
+optional `component` prop can be provided for another component to receive
+the rewritten `to`, `Button` for example.
 
 
 ## onCloseDirect
