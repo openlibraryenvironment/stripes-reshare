@@ -64,7 +64,7 @@
   "states.RES_ITEM_RETURNED":"Return shipped",
   "states.RES_COMPLETE":"Complete",
   "states.RES_UNFILLED":"Not supplied",
-  "states.RES_PENDING_CONDITIONAL_ANSWER":"Conditions sent to requester, awaiting confirmation",
+  "states.RES_PENDING_CONDITIONAL_ANSWER":"Conditions sent",
   "states.RES_CANCEL_REQUEST_RECEIVED":"Cancel request recieved",
 
   "states.undefined":"ERROR: State undefined"
