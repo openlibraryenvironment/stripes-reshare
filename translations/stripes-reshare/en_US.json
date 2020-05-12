@@ -40,7 +40,7 @@
   "states.REQ_REQUEST_SENT_TO_SUPPLIER":"Request sent",
   "states.REQ_BORROWER_RETURNED":"Borrower returned item",
   "states.REQ_BORROWING_LIBRARY_RECEIVED":"Awaiting local item creation",
-  "states.REQ_CHECKED_IN":"Ready to circulate",
+  "states.REQ_CHECKED_IN":"In local circulation process",
   "states.REQ_AWAITING_RETURN_SHIPPING":"Awaiting return shipping",
   "states.REQ_SHIPPED":"Shipped",
   "states.REQ_REQUEST_COMPLETE":"Complete",
@@ -65,7 +65,7 @@
   "states.RES_COMPLETE":"Complete",
   "states.RES_UNFILLED":"Not supplied",
   "states.RES_PENDING_CONDITIONAL_ANSWER":"Conditions sent",
-  "states.RES_CANCEL_REQUEST_RECEIVED":"Cancel request recieved",
+  "states.RES_CANCEL_REQUEST_RECEIVED":"Cancel request received",
 
   "states.undefined":"ERROR: State undefined"
 }
