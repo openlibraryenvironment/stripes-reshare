@@ -13,7 +13,7 @@
   "actions.shippedReturn": "Mark return shipped",
   "actions.shippedReturn.success": "Successfully marked request return shipped.",
   "actions.shippedReturn.error": "Error marking request return shipped.",
-  "actions.supplierCheckInToReshare": "Submit item",
+  "actions.supplierCheckInToReshare": "Fill request",
   "actions.supplierCheckInToReshare.success": "Successfully submitted item",
   "actions.supplierCheckInToReshare.error": "Error submitting item",
   "actions.supplierCheckOutOfReshare": "Complete request",
