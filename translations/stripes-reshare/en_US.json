@@ -64,7 +64,7 @@
   "states.RES_ITEM_RETURNED":"Return shipped",
   "states.RES_COMPLETE":"Complete",
   "states.RES_UNFILLED":"Not supplied",
-  "states.RES_PENDING_CONDITIONAL_ANSWER":"Conditions sent",
+  "states.RES_PENDING_CONDITIONAL_ANSWER":"Loan conditions sent",
   "states.RES_CANCEL_REQUEST_RECEIVED":"Cancel request received",
 
   "states.undefined":"ERROR: State undefined"
