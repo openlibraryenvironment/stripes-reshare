@@ -7,6 +7,7 @@
 export { default as DirectLink } from './src/DirectLink/DirectLink';
 export { default as onCloseDirect } from './src/DirectLink/onCloseDirect';
 
+export { default as RefdataButtons } from './src/RefdataButtons/RefdataButtons';
 
 // Utilities
 
