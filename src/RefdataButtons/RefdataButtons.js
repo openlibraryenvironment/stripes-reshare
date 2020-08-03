@@ -4,6 +4,10 @@ import { Col, RadioButton, Row } from '@folio/stripes/components';
 
 const RefdataButtons = (props) => {
   // Render the right number of buttons:
+  const { maxCols = 4 } = props;
+
+  // maxCols can be any of 1,2,3 or 4. Anything outside of this should be disregarded and default to 4.
+  const maximumColumns = [1, 2, 3, 4].includes(maxCols) ? maxCols : 4;
 
   const buttonRender = (dataOptions, dynamicColumnWidth) => {
     // This accepts a SORTED list of dataoptions.
@@ -21,7 +25,7 @@ const RefdataButtons = (props) => {
         };
 
         return (
-          <Col xs={dynamicColumnWidth ? (12 / numberOfButtons) : 3} key={`${input.name}:${option.id}`}>
+          <Col xs={dynamicColumnWidth ? (12 / numberOfButtons) : (12 / maximumColumns)} key={`${input.name}:${option.id}`}>
             <RadioButton
               {...buttonProps}
             />
@@ -50,11 +54,11 @@ const RefdataButtons = (props) => {
       );
     }
 
-    const rowsNeeded = Math.ceil(sortedDataOptions.length / 4);
+    const rowsNeeded = Math.ceil(sortedDataOptions.length / maximumColumns);
     const chunkedDataOptions = [];
 
     for (let i = 0; i < rowsNeeded; i++) {
-      chunkedDataOptions.push(sortedDataOptions.slice((i * 4), (i * 4 + 4)));
+      chunkedDataOptions.push(sortedDataOptions.slice((i * maximumColumns), (i * maximumColumns + maximumColumns)));
     }
     return (
       chunkedDataOptions.map((cdo, index) => {
