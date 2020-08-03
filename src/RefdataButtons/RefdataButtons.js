@@ -5,7 +5,7 @@ import { Col, RadioButton, Row } from '@folio/stripes/components';
 
 const RefdataButtons = (props) => {
   // Render the right number of buttons:
-  const { labelTranslations, maxCols = 4 } = props;
+  const { labelTranslations, lockColumns, maxCols = 4 } = props;
   const intl = useIntl();
 
   // maxCols can be any of 1,2,3 or 4. Anything outside of this should be disregarded and default to 4.
@@ -48,7 +48,7 @@ const RefdataButtons = (props) => {
       return 0;
     });
     const arrayLength = sortedDataOptions.length;
-    if (arrayLength <= 4) {
+    if (!lockColumns && arrayLength <= maximumColumns) {
       return (
         <Row>
           {buttonRender(sortedDataOptions, true)}
