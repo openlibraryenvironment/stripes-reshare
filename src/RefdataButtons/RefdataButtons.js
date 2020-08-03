@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useIntl } from 'react-intl';
 import { Col, RadioButton, Row } from '@folio/stripes/components';
 
 const RefdataButtons = (props) => {
   // Render the right number of buttons:
-  const { maxCols = 4 } = props;
+  const { labelTranslations, maxCols = 4 } = props;
+  const intl = useIntl();
 
   // maxCols can be any of 1,2,3 or 4. Anything outside of this should be disregarded and default to 4.
   const maximumColumns = [1, 2, 3, 4].includes(maxCols) ? maxCols : 4;
@@ -18,7 +20,7 @@ const RefdataButtons = (props) => {
         const buttonProps = {
           'checked': input.value === option.value,
           'fullWidth': true,
-          'label': option.label,
+          'label': (labelTranslations ? intl.formatMessage({ id: `${labelTranslations.key}.${option.value}`, defaultMessage: option.label }) : option.label),
           'marginBottom0': true,
           'onChange': (() => input.onChange(option.value)),
           'value': option.value
