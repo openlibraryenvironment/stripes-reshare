@@ -1,61 +1,80 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Col, Tooltip, Row } from '@folio/stripes/components';
+import { Col, RadioButton, Row } from '@folio/stripes/components';
 
 const RefdataButtons = (props) => {
   // Render the right number of buttons:
-  const buttonRender = () => {
-    const { dataOptions, input } = props;
+  const { maxCols = 4 } = props;
+
+  // maxCols can be any of 1,2,3 or 4. Anything outside of this should be disregarded and default to 4.
+  const maximumColumns = [1, 2, 3, 4].includes(maxCols) ? maxCols : 4;
+
+  const buttonRender = (dataOptions, dynamicColumnWidth) => {
+    // This accepts a SORTED list of dataoptions.
+    const { input } = props;
+    const numberOfButtons = dataOptions.length;
     return (
-      dataOptions.sort((a, b) => {
-        if (a.label < b.label) {
-          return -1;
-        }
-        if (a.label > b.label) {
-          return 1;
-        }
-        return 0;
-      }).map(option => {
+      dataOptions.map(option => {
         const buttonProps = {
-          'buttonStyle': (input.value === option.value ? 'primary' : 'default'),
+          'checked': input.value === option.value,
           'fullWidth': true,
+          'label': option.label,
           'marginBottom0': true,
-          'onClick': (() => input.onChange(option.value))
+          'onChange': (() => input.onChange(option.value)),
+          'value': option.value
         };
 
         return (
-          <Col xs={12 / dataOptions.length}>
-            {option.label.length > 8 ?
-              <Tooltip
-                id={option.id}
-                text={option.label}
-              >
-                {({ ref, ariaIds }) => (
-                  <Button
-                    {...buttonProps}
-                    ref={ref}
-                    aria-labelledby={ariaIds.text}
-                  >
-                    {`${option.label.substring(0, 8)}...`}
-                  </Button>
-                )}
-              </Tooltip> :
-              <Button
-                {...buttonProps}
-              >
-                {option.label}
-              </Button>
-            }
+          <Col xs={dynamicColumnWidth ? (12 / numberOfButtons) : (12 / maximumColumns)} key={`${input.name}:${option.id}`}>
+            <RadioButton
+              {...buttonProps}
+            />
           </Col>
         );
       })
     );
   };
 
+  const returnRows = (dataOptions) => {
+    const sortedDataOptions = dataOptions.sort((a, b) => {
+      if (a.label < b.label) {
+        return -1;
+      }
+      if (a.label > b.label) {
+        return 1;
+      }
+      return 0;
+    });
+    const arrayLength = sortedDataOptions.length;
+    if (arrayLength <= 4) {
+      return (
+        <Row>
+          {buttonRender(sortedDataOptions, true)}
+        </Row>
+      );
+    }
+
+    const rowsNeeded = Math.ceil(sortedDataOptions.length / maximumColumns);
+    const chunkedDataOptions = [];
+
+    for (let i = 0; i < rowsNeeded; i++) {
+      chunkedDataOptions.push(sortedDataOptions.slice((i * maximumColumns), (i * maximumColumns + maximumColumns)));
+    }
+    return (
+      chunkedDataOptions.map((cdo, index) => {
+        return (
+          <Row
+            key={`${props.input.name}:row${index}`}
+          >
+            {buttonRender(cdo, false)}
+          </Row>
+        );
+      })
+    );
+  };
+
   return (
-    <Row>
-      {buttonRender()}
-    </Row>
+    returnRows(props.dataOptions)
   );
 };
 
@@ -66,9 +85,7 @@ RefdataButtons.propTypes = {
     value: PropTypes.string.isRequired,
   })),
   input: PropTypes.shape({
-    value: PropTypes.arrayOf(
-      PropTypes.string.isRequired,
-    ).isRequired,
+    value: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
   }).isRequired,
 };
