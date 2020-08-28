@@ -65,7 +65,7 @@ class CatalogInfo extends React.Component {
     const isbn = identifierValue(bibRecord, isbnTypeId);
     const issn = identifierValue(bibRecord, issnTypeId);
     const hasISSN = !!issn;
-    const idKey = `ui-rs.information.${hasISSN ? 'issn' : 'isbn'}`;
+    const idKey = `stripes-reshare.catalogInfo.${hasISSN ? 'issn' : 'isbn'}`;
     const idValue = hasISSN ? issn : isbn;
 
     const inventoryLink = (
@@ -74,7 +74,7 @@ class CatalogInfo extends React.Component {
         rel="noopener noreferrer"
         href={`${stripes.config.sharedIndexUI}/inventory/view/${id}`}
       >
-        View Record
+        <FormattedMessage id="stripes-reshare.catalogInfo.viewRecord" />
       </a>
     );
 
@@ -90,13 +90,13 @@ class CatalogInfo extends React.Component {
         <Row>
           <Col xs={6}>
             <KeyValue
-              label={<FormattedMessage id="ui-rs.information.title" />}
+              label={<FormattedMessage id="stripes-reshare.catalogInfo.title" />}
               value={title}
             />
           </Col>
           <Col xs={6}>
             <KeyValue
-              label={<FormattedMessage id="ui-rs.information.author" />}
+              label={<FormattedMessage id="stripes-reshare.catalogInfo.author" />}
               value={author}
             />
           </Col>
@@ -110,7 +110,7 @@ class CatalogInfo extends React.Component {
           </Col>
           <Col xs={6}>
             <KeyValue
-              label={<FormattedMessage id="ui-rs.information.date" />}
+              label={<FormattedMessage id="stripes-reshare.catalogInfo.date" />}
               value={date}
             />
           </Col>

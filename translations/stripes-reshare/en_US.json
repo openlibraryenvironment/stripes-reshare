@@ -68,6 +68,13 @@
   "states.RES_PENDING_CONDITIONAL_ANSWER":"Loan conditions sent",
   "states.RES_CANCEL_REQUEST_RECEIVED":"Cancel request received",
 
-  "states.undefined":"ERROR: State undefined"
+  "states.undefined":"ERROR: State undefined",
+
+  "catalogInfo.viewRecord": "View record",
+  "catalogInfo.title": "Title",
+  "catalogInfo.author": "Author",
+  "catalogInfo.issn": "ISSN",
+  "catalogInfo.isbn": "ISBN",
+  "catalogInfo.date": "Date"
 }
 
