@@ -32,6 +32,8 @@
   "actions.requesterAgreeConditions": "Agree to loan conditions",
   "actions.requesterRejectConditions": "Reject loan conditions",
   "actions.supplierMarkConditionsAgreed": "Mark loan conditions agreed",
+  "actions.borrowerCheck": "Redo borrower check",
+  "actions.borrowerCheckOverride": "Override borrower check",
 
   "states.REQ_IDLE":"New",
   "states.REQ_VALIDATED":"Validated",
