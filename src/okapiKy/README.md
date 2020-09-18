@@ -12,6 +12,7 @@ the Okapi URL and adds headersfor tenant and token.
 
 Example usage:
 
+```
 SomeComponent = props => {
  const ky = useOkapiKy();
  ky('circulation/check-in-by-barcode', {
@@ -25,6 +26,7 @@ SomeComponent = props => {
    }
  });
 };
+```
 
 ## withOkapiKy
 
