@@ -12,5 +12,3 @@ export { default as RefdataButtons } from './src/RefdataButtons/RefdataButtons';
 // Utilities
 
 export * as inventoryTypeIds from './src/inventoryTypeIds';
-export { default as useOkapiKy } from './src/okapiKy/useOkapiKy';
-export { default as withOkapiKy } from './src/okapiKy/withOkapiKy';
