@@ -56,6 +56,7 @@
   "states.REQ_CANCELLED_WITH_SUPPLIER":"Cancelled with previous supplier",
   "states.REQ_CANCELLED":"Cancelled",
   "states.REQ_UNFILLED":"Unfilled",
+  "states.REQ_OVERDUE":"Overdue",
 
   "states.RES_IDLE":"New",
   "states.RES_NEW_AWAIT_PULL_SLIP":"Awaiting pull slip printing",
@@ -70,6 +71,7 @@
   "states.RES_UNFILLED":"Not supplied",
   "states.RES_PENDING_CONDITIONAL_ANSWER":"Loan conditions sent",
   "states.RES_CANCEL_REQUEST_RECEIVED":"Cancel request received",
+  "states.RES_OVERDUE":"Overdue",
 
   "states.undefined":"ERROR: State undefined",
 
