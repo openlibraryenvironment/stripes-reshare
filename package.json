@@ -7,6 +7,9 @@
   "engines": {
     "node": ">=10.0.0"
   },
+  "publishConfig" : {
+    "registry": "https://repository.dev-us-east-1.indexdata.com/repository/reshare"
+  },
   "scripts": {
     "lint": "eslint ./src"
   },
