@@ -31,6 +31,9 @@
   "actions.supplierMarkConditionsAgreed": "Mark loan conditions agreed",
   "actions.borrowerCheck": "Redo borrower check",
   "actions.borrowerCheckOverride": "Override borrower check",
+  "actions.cancelLocal": "Cancel",
+  "actions.fillLocally": "Fill locally",
+  "actions.localSupplierCannotSupply" : "Respond \"cannot supply\"",
 
   "states.REQ_IDLE":"New",
   "states.REQ_VALIDATED":"Validated",
@@ -54,6 +57,7 @@
   "states.REQ_CANCELLED":"Cancelled",
   "states.REQ_UNFILLED":"Unfilled",
   "states.REQ_OVERDUE":"Overdue",
+  "states.REQ_LOCAL_REVIEW":"Requires review - locally available",
 
   "states.RES_IDLE":"New",
   "states.RES_NEW_AWAIT_PULL_SLIP":"Awaiting pull slip printing",
