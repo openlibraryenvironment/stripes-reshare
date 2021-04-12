@@ -6,7 +6,7 @@ A react-final-form Field component to render radio buttons for each of a selecti
 
 ```
 import { Field } from  'react-final-form';
-import { RefdataButtons} from '@folio/stripes-reshare';
+import { RefdataButtons} from '@reshare/stripes-reshare';
 
 ...
 <Field
