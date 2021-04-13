@@ -33,11 +33,7 @@
   "actions.borrowerCheckOverride": "Override borrower check",
   "actions.cancelLocal": "Cancel",
   "actions.fillLocally": "Fill locally",
-  "actions.fillLocally.success": "Successfully marked request filled locally.",
-  "actions.fillLocally.error": "Error marking request filled locally.",
   "actions.localSupplierCannotSupply" : "Respond \"cannot supply\"",
-  "actions.localSupplierCannotSupply.success" : "Successfully responded \"cannot supply\"",
-  "actions.localSupplierCannotSupply.error" : "Error responding \"cannot supply\"",
 
   "states.REQ_IDLE":"New",
   "states.REQ_VALIDATED":"Validated",
