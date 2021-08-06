@@ -79,6 +79,7 @@
   "states.RES_PENDING_CONDITIONAL_ANSWER":"Loan conditions sent",
   "states.RES_CANCEL_REQUEST_RECEIVED":"Cancel request received",
   "states.RES_OVERDUE":"Overdue",
+  "states.RES_NOT_SUPPLIED":"Could not supply",
 
   "states.undefined":"ERROR: State undefined",
 
