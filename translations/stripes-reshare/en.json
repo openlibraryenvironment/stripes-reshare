@@ -63,6 +63,7 @@
   "states.REQ_OVERDUE":"Overdue",
   "states.REQ_LOCAL_REVIEW":"Requires review - locally available",
   "states.REQ_FILLED_LOCALLY":"Filled locally",
+  "states.REQ_UNABLE_TO_CONTACT_SUPPLIER":"Unable to contact supplier",
 
   "states.RES_IDLE":"New",
   "states.RES_NEW_AWAIT_PULL_SLIP":"Awaiting pull slip printing",
