@@ -68,15 +68,16 @@ class CatalogInfo extends React.Component {
     const idKey = `stripes-reshare.catalogInfo.${hasISSN ? 'issn' : 'isbn'}`;
     const idValue = hasISSN ? issn : isbn;
 
-    const inventoryLink = (
+    const siUrl = stripes?.config?.reshare?.sharedIndex?.ui;
+    const inventoryLink = siUrl ? (
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href={`${stripes.config.sharedIndexUI}/inventory/view/${id}`}
+        href={`${siUrl}/inventory/view/${id}`}
       >
         <FormattedMessage id="stripes-reshare.catalogInfo.viewRecord" />
       </a>
-    );
+    ) : null;
 
     return (
       <Card
