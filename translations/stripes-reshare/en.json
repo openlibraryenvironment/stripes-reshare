@@ -1,6 +1,10 @@
 {
   "requestState": "Request state",
 
+  "action.notValidForState": "Action not valid for current state",
+  "actions.generic.success": "Sucess: {action}",
+  "actions.generic.error": "Error: {action}. {errMsg}",
+
   "actions.patronReturnedItem": "Mark returned by patron",
   "actions.patronReturnedItem.success": "Successfully marked request returned by patron.",
   "actions.patronReturnedItem.error": "Error marking request returned by patron. {errMsg}",
