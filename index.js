@@ -12,8 +12,7 @@ export { default as RefdataButtons } from './src/RefdataButtons/RefdataButtons';
 // Hooks
 export { default as useIntlCallout } from './src/useIntlCallout';
 export { default as useIsActionPending } from './src/useIsActionPending';
-// export { useOkapiQuery, useOkapiQueryConfig, useSharedOkapiQuery, useSharedOkapiQueryConfig } from './src/useOkapiQuery';
-export { useSharedOkapiQuery, useSharedOkapiQueryConfig } from './src/useOkapiQuery';
+export { useOkapiQuery, useOkapiQueryConfig } from './src/useOkapiQuery';
 export { default as usePerformAction } from './src/usePerformAction';
 
 

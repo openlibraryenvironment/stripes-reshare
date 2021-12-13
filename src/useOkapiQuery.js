@@ -1,25 +1,8 @@
 import { useQuery } from 'react-query';
+import { omit } from 'lodash';
 import { useOkapiKy } from '@folio/stripes/core';
 // TODO: ReShare is not using new enough Stripes for NS
 // import { useOkapiKy, useNamespace } from '@folio/stripes/core';
-
-const useOkapiQueryConfigNoNS = (path, searchParams, keys, { queryOpt = {}, kyOpt = false }) => {
-  const okapiKy = useOkapiKy();
-  const ky = kyOpt ? okapiKy.extend(kyOpt) : okapiKy;
-  return {
-    queryKey: [path, searchParams, ...keys],
-    queryFn: () => ky(path, { searchParams }).json(),
-    useErrorBoundary: true,
-    ...queryOpt,
-  };
-};
-
-// const useOkapiQueryConfig = (path, searchParams, keys, opt) => {
-//   const [ns] = useNamespace();
-//   return useOkapiQueryConfigNoNS(path, searchParams, [ns, ...keys], opt);
-// };
-
-// const useOkapiQuery = (...params) => useQuery(useOkapiQueryConfig(...params));
 
 // I confirmed with a react-query maintainer what the docs imply: you can share
 // the same key between queries that use different values for staleTime and
@@ -31,12 +14,33 @@ const useOkapiQueryConfigNoNS = (path, searchParams, keys, { queryOpt = {}, kyOp
 // exceptions are if one observer is disabled, then it gets bypassed.  also, if
 // e.g. one of them has refetchOnWindowFocus: false , and you focus the window,
 // we only look at the stale times of observers where this flag is true. "
-const useSharedOkapiQueryConfig = (path, searchParams, staleTime, opt) => useOkapiQueryConfigNoNS(
-  path, searchParams, opt ? [opt] : [], {
-    queryOpt: { staleTime, cacheTime: staleTime + 5 * 60 * 1000, ...(opt || {}) }
-  }
-);
-const useSharedOkapiQuery = (...params) => useQuery(useSharedOkapiQueryConfig(...params));
+const sharableQueryOptions = ['cacheTime', 'initialData', 'initialDataUpdatedAt', 'staleTime'];
+const useOkapiQueryConfig = (path, { kyOpt = {}, searchParams = {}, ns = false, ...opt }, keys = []) => {
+  const okapiKy = useOkapiKy().extend(kyOpt);
+  // const [namespace] = useNamespace();
 
-// export { useOkapiQuery, useOkapiQueryConfig, useSharedOkapiQuery, useSharedOkapiQueryConfig };
-export { useSharedOkapiQuery, useSharedOkapiQueryConfig };
+  const extraOpt = {};
+  if (opt.staleTime && !opt.cacheTime) {
+    extraOpt.cacheTime = opt.staleTime + 5 * 60 * 1000;
+  }
+
+  const extraKeys = [];
+  if (Object.keys(searchParams).length > 0) extraKeys.push(searchParams);
+  const unshareable = omit(opt, sharableQueryOptions);
+  if (Object.keys(unshareable).length > 0) extraKeys.push(unshareable);
+  // if (ns) extraKeys.push(namespace);
+
+  return {
+    queryKey: [path, searchParams, ...extraKeys, ...keys],
+    queryFn: () => okapiKy(path, { searchParams }).json(),
+    // reinstating default currently disabled by stripes-core
+    refetchOnWindowFocus: true,
+    useErrorBoundary: true,
+    ...extraOpt,
+    ...opt,
+  };
+};
+
+const useOkapiQuery = (...params) => useQuery(useOkapiQueryConfig(...params));
+
+export { useOkapiQuery, useOkapiQueryConfig };
