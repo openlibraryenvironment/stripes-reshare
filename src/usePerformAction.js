@@ -41,7 +41,15 @@ export default (hookReqId) => {
           sendCallout('stripes-reshare.actions.generic.success', 'success', { action: `stripes-reshare.actions.${action}` }, ['action']);
         }
       }
-      queryClient.invalidateQueries(`rs/patronrequests/${id}`);
+      const invalidateRequest = () => queryClient.invalidateQueries(`rs/patronrequests/${id}`);
+      // unfortunately, actions do not always block until they are fully complete and things
+      // (for example responses from ncip) may take a while to show up in the audit log, etc.
+      // so we have to expire the cache a few times to keep the record reasonably up to date
+      // as that happens.
+      invalidateRequest();
+      setTimeout(invalidateRequest, 15000);
+      setTimeout(invalidateRequest, 45000);
+      setTimeout(invalidateRequest, 90000);
       queryClient.invalidateQueries('rs/patronrequests');
       return res;
     } catch (err) {
