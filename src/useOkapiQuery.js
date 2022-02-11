@@ -15,7 +15,7 @@ import { useOkapiKy } from '@folio/stripes/core';
 // e.g. one of them has refetchOnWindowFocus: false , and you focus the window,
 // we only look at the stale times of observers where this flag is true. "
 const sharableQueryOptions = ['cacheTime', 'initialData', 'initialDataUpdatedAt', 'staleTime'];
-const useOkapiQueryConfig = (path, { kyOpt = {}, searchParams = {}, ns = false, ...opt }, keys = []) => {
+const useOkapiQueryConfig = (path, { kyOpt = {}, searchParams = {}, ns = false, ...opt } = {}, keys = []) => {
   const okapiKy = useOkapiKy().extend(kyOpt);
   // const [namespace] = useNamespace();
 
