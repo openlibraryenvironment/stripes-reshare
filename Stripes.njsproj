@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{f2dfca3b-0626-4372-ac54-a696a2acced5}</ProjectGuid>
+        <ProjectHome>.</ProjectHome>
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>index.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="package.json" />
+        <Content Include="CHANGELOG.md" />
+        <Content Include="README.md" />
+        <Content Include="index.js" />
+        <Content Include="cards\index.js" />
+        <Content Include="src\inventoryTypeIds.js" />
+        <Content Include="src\useIntlCallout.js" />
+        <Content Include="src\useIsActionPending.js" />
+        <Content Include="src\useOkapiQuery.js" />
+        <Content Include="src\usePerformAction.js" />
+        <Content Include="src\cards\CatalogInfo.css" />
+        <Content Include="src\cards\CatalogInfo.js" />
+        <Content Include="src\cards\RequesterSupplier.js" />
+        <Content Include="src\DirectLink\README.md" />
+        <Content Include="src\DirectLink\DirectLink.js" />
+        <Content Include="src\DirectLink\onCloseDirect.js" />
+        <Content Include="src\RefdataButtons\README.md" />
+        <Content Include="src\RefdataButtons\RefdataButtons.js" />
+        <Content Include="translations\stripes-reshare\en.json" />
+        <Content Include="translations\stripes-reshare\en_US.json" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="cards" />
+        <Folder Include="src" />
+        <Folder Include="src\cards" />
+        <Folder Include="src\DirectLink" />
+        <Folder Include="src\RefdataButtons" />
+        <Folder Include="Stripes" />
+        <Folder Include="translations" />
+        <Folder Include="translations\stripes-reshare" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
