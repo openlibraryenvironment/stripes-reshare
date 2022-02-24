@@ -5,6 +5,7 @@
 // Components (grouped with associated helpers)
 export { default as DirectLink } from './src/DirectLink/DirectLink';
 export { default as onCloseDirect } from './src/DirectLink/onCloseDirect';
+export { default as useCloseDirect } from './src/DirectLink/useCloseDirect';
 
 export { default as RefdataButtons } from './src/RefdataButtons/RefdataButtons';
 
@@ -18,3 +19,4 @@ export { default as usePerformAction } from './src/usePerformAction';
 
 // Utilities
 export * as inventoryTypeIds from './src/inventoryTypeIds';
+export { default as upNLevels } from './src/upNLevels';
