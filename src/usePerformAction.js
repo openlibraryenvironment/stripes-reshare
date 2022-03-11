@@ -63,7 +63,7 @@ export default (hookReqId) => {
         } else {
           showError(err.message);
         }
-      }
+      } else throw new Error(err);
       return err;
     }
   };
