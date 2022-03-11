@@ -31,7 +31,11 @@ class CatalogInfo extends React.Component {
     id: PropTypes.string,
     stripes: PropTypes.shape({
       config: PropTypes.shape({
-        sharedIndexUI: PropTypes.string.isRequired,
+        reshare: PropTypes.shape({
+          sharedIndex: PropTypes.shape({
+            ui: PropTypes.string.isRequired,
+          }),
+        }),
       }),
     }),
   };
