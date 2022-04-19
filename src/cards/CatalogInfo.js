@@ -62,26 +62,30 @@ class CatalogInfo extends React.Component {
     }
 
     stripes.logger.log('bib', 'bibRecord =', bibRecord);
-    const title = bibRecord.title;
-    const author = get(bibRecord, 'contributors[0].name');
-    const date = get(bibRecord, 'publication[0].dateOfPublication');
+    try {
+      var title = bibRecord.title;
+      var author = get(bibRecord, 'contributors[0].name');
+      var date = get(bibRecord, 'publication[0].dateOfPublication');
 
-    const isbn = identifierValue(bibRecord, isbnTypeId);
-    const issn = identifierValue(bibRecord, issnTypeId);
-    const hasISSN = !!issn;
-    const idKey = `stripes-reshare.catalogInfo.${hasISSN ? 'issn' : 'isbn'}`;
-    const idValue = hasISSN ? issn : isbn;
+      var isbn = identifierValue(bibRecord, isbnTypeId);
+      var issn = identifierValue(bibRecord, issnTypeId);
+      var hasISSN = !!issn;
+      var idKey = `stripes-reshare.catalogInfo.${hasISSN ? 'issn' : 'isbn'}`;
+      var idValue = hasISSN ? issn : isbn;
 
-    const siUrl = stripes?.config?.reshare?.sharedIndex?.ui;
-    const inventoryLink = siUrl ? (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href={`${siUrl}/inventory/view/${id}`}
-      >
-        <FormattedMessage id="stripes-reshare.catalogInfo.viewRecord" />
-      </a>
-    ) : null;
+      var siUrl = stripes?.config?.reshare?.sharedIndex?.ui;
+      var inventoryLink = siUrl ? (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={`${siUrl}/inventory/view/${id}`}
+        >
+          <FormattedMessage id="stripes-reshare.catalogInfo.viewRecord" />
+        </a>
+      ) : null;
+    } catch (e) {
+      return <FormattedMessage id="stripes-reshare.catalogInfo.error" />;
+    }
 
     return (
       <Card
