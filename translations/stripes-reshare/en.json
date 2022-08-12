@@ -9,7 +9,7 @@
   "actions.patronReturnedItem.success": "Successfully marked request returned by patron.",
   "actions.patronReturnedItem.error": "Error marking request returned by patron. {errMsg}",
   "actions.patronReturnedItemAndShippedReturn": "Mark returned by patron and return shipped",
-  "actions.patronReturnedItemAndShippedReturn.success": "Successfully marked request returned by patron and shipped.",
+  "actions.patronReturnedItemAndShippedReturn.success": "Successfully marked request returned by patron and return shipped.",
   "actions.patronReturnedItemAndShippedReturn.error": "Error marking request returned by patron and shipped. {errMsg}",
   "actions.requesterReceived": "Mark received",
   "actions.requesterReceived.success": "Successfully marked request received.",
