@@ -100,6 +100,35 @@
   "catalogInfo.author": "Author",
   "catalogInfo.issn": "ISSN",
   "catalogInfo.isbn": "ISBN",
-  "catalogInfo.date": "Date"
+  "catalogInfo.date": "Date",
+
+
+
+  "AND": "AND",
+  "OR": "OR",
+  "create": "Create",
+  "edit": "Edit",
+  "save": "Save",
+  "saveAndClose": "Save & close",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "apply": "Apply",
+  "new": "New",
+  "notSet": "Not set",
+  "search": "Search",
+  "yes": "Yes",
+  "no": "No",
+
+  "actionList.save": "Save",
+  "actionList.cancel": "Cancel",
+  "actionList.create": "Create",
+  "actionList.actions": "Actions",
+
+  "settings.noCurrentValue": "No current value",
+  "settings.default": "default",
+  "settings.edit": "Edit",
+  "settings.settingLoading": "Loading",
+  "settings.finishEditing": "Finish editing",
+  "settings.valueFor": "Value for setting {name}"
 }
 
