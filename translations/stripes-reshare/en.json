@@ -2,7 +2,7 @@
   "requestState": "Request state",
 
   "action.notValidForState": "Action not valid for current state",
-  "actions.generic.success": "Sucess: {action}",
+  "actions.generic.success": "Success: {action}",
   "actions.generic.error": "Error: {action}. {errMsg}",
 
   "actions.patronReturnedItem": "Mark returned by patron",
@@ -28,7 +28,7 @@
   "actions.supplierCheckOutOfReshare.error": "Error completing request. {errMsg}",
   "actions.supplierManualCheckout": "Mark item checked out",
   "actions.supplierManualCheckout.error": "Error marking item checked out. {errMsg}",
-  "actions.supplierManualCheckout.success": "Sucessfully marked item checked out",
+  "actions.supplierManualCheckout.success": "Successfully marked item checked out",
   "actions.supplierMarkShipped": "Mark request shipped",
   "actions.supplierMarkShipped.success": "Successfully marked request shipped.",
   "actions.supplierMarkShipped.error": "Error marking request shipped. {errMsg}",
