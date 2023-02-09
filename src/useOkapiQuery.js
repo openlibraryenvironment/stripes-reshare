@@ -31,7 +31,7 @@ const useOkapiQueryConfig = (path, { kyOpt = {}, searchParams = {}, ns = false, 
   // if (ns) extraKeys.push(namespace);
 
   return {
-    queryKey: [path, searchParams, ...extraKeys, ...keys],
+    queryKey: [path, ...extraKeys, ...keys],
     queryFn: () => okapiKy(path, { searchParams }).json(),
     // reinstating default currently disabled by stripes-core
     refetchOnWindowFocus: true,
