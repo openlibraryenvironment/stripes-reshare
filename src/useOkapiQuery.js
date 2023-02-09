@@ -1,8 +1,6 @@
 import { useQuery } from 'react-query';
 import { omit } from 'lodash';
 import { useOkapiKy } from '@folio/stripes/core';
-// TODO: ReShare is not using new enough Stripes for NS
-// import { useOkapiKy, useNamespace } from '@folio/stripes/core';
 
 // I confirmed with a react-query maintainer what the docs imply: you can share
 // the same key between queries that use different values for staleTime and
@@ -17,7 +15,6 @@ import { useOkapiKy } from '@folio/stripes/core';
 const sharableQueryOptions = ['cacheTime', 'initialData', 'initialDataUpdatedAt', 'staleTime'];
 const useOkapiQueryConfig = (path, { kyOpt = {}, searchParams = {}, ns = false, ...opt } = {}, keys = []) => {
   const okapiKy = useOkapiKy().extend(kyOpt);
-  // const [namespace] = useNamespace();
 
   const extraOpt = {};
   if (opt.staleTime && !opt.cacheTime) {
@@ -28,7 +25,6 @@ const useOkapiQueryConfig = (path, { kyOpt = {}, searchParams = {}, ns = false, 
   if (Object.keys(searchParams).length > 0) extraKeys.push(searchParams);
   const unshareable = omit(opt, sharableQueryOptions);
   if (Object.keys(unshareable).length > 0) extraKeys.push(unshareable);
-  // if (ns) extraKeys.push(namespace);
 
   return {
     queryKey: [path, ...extraKeys, ...keys],
