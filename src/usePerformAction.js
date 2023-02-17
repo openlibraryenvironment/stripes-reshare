@@ -21,7 +21,7 @@ export default (hookReqId) => {
       .post(`rs/patronrequests/${id}/performAction`, { json: data })
   );
 
-  const performAction = async (reqId, action, payload, msgs = {}) => {
+  const performAction = async (reqId, action, payload, opt = {}) => {
     let id;
     if (typeof reqId === 'string') id = reqId;
     else if (typeof reqId === 'object') {
@@ -34,28 +34,34 @@ export default (hookReqId) => {
 
     try {
       const res = await postAction({ id, action, actionParams: payload || {} });
-      if (msgs.display !== 'none') {
-        if (msgs.success) {
-          sendCallout(msgs.success, 'success');
+      if (opt.display !== 'none') {
+        if (opt.success) {
+          sendCallout(opt.success, 'success');
         } else {
           sendCallout('stripes-reshare.actions.generic.success', 'success', { action: `stripes-reshare.actions.${action}` }, ['action']);
         }
       }
       const invalidateRequest = () => queryClient.invalidateQueries(`rs/patronrequests/${id}`);
+      invalidateRequest();
+
       // unfortunately, actions do not always block until they are fully complete and things
       // (for example responses from ncip) may take a while to show up in the audit log, etc.
       // so we have to expire the cache a few times to keep the record reasonably up to date
       // as that happens.
-      invalidateRequest();
-      setTimeout(invalidateRequest, 15000);
-      setTimeout(invalidateRequest, 45000);
-      setTimeout(invalidateRequest, 90000);
+
+      // provide noAsync option to exclude an action from these follow-ups
+      if (!opt.noAsync) {
+        setTimeout(invalidateRequest, 15000);
+        setTimeout(invalidateRequest, 45000);
+        setTimeout(invalidateRequest, 90000);
+      }
+
       queryClient.invalidateQueries('rs/patronrequests');
       return res;
     } catch (err) {
-      if (msgs.display !== 'none') {
+      if (opt.display !== 'none') {
         const showError = errMsg => {
-          if (msgs.error) sendCallout(msgs.error, 'error', { errMsg });
+          if (opt.error) sendCallout(opt.error, 'error', { errMsg });
           else sendCallout('stripes-reshare.actions.generic.error', 'error', { action: `stripes-reshare.actions.${action}`, errMsg }, ['action']);
         };
         if (err?.response?.json) {
