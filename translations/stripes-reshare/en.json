@@ -75,6 +75,7 @@
   "states.REQ_LOCAL_REVIEW": "Requires review - locally available",
   "states.REQ_FILLED_LOCALLY": "Filled locally",
   "states.REQ_UNABLE_TO_CONTACT_SUPPLIER": "Unable to contact supplier",
+  "states.REQ_LOANED_DIGITALLY": "Loaned digitally",
 
   "states.RES_IDLE": "New",
   "states.RES_NEW_AWAIT_PULL_SLIP": "Awaiting pull slip printing",
@@ -91,6 +92,10 @@
   "states.RES_CANCEL_REQUEST_RECEIVED": "Cancel request received",
   "states.RES_OVERDUE": "Overdue",
   "states.RES_NOT_SUPPLIED": "Could not supply",
+
+  "states.RES_SEQUESTERED": "Item sequestered",
+  "states.RES_LOANED_DIGITALLY": "Loaned digitally",
+  "states.RES_AWAIT_DESEQUESTRATION": "Awaiting desequestration",
 
   "states.undefined": "ERROR: State undefined",
 
