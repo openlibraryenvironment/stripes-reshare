@@ -1,15 +1,3 @@
-# This workflow will do a clean install of node dependencies, build the source code,
-# run unit tests, perform a Sonarqube scan, and publish NPM artifacts from master/main.
-
-# For more information see:
-# https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-# Common FOLIO configurable environment variables to set:
-#   - YARN_TEST_OPTIONS (options to pass to 'yarn test')
-#   - SQ_ROOT_DIR (root SQ directory to scan relative to top-level directory)
-#   - PUBLISH_MOD_DESCRIPTOR (boolean 'true' or 'false')
-#   - COMPILE_TRANSLATION_FILES (boolean 'true' or 'false')
-
 
 name: buildNPM Snapshot
 on: [push, pull_request]
@@ -18,17 +6,16 @@ jobs:
   build-npm:
     env:
       FOLIO_NPM_REGISTRY: 'https://repository.folio.org/repository/npm-folioci/'
-      RESHARE_NPM_REGISTRY: 'https://nexus.libsdev.k-int.com/repository/libsdev-npm-snapshots-hosted/'
+      RESHARE_NPM_REGISTRY: 'https://npm.pkg.github.com'
       NODEJS_VERSION: '16'
 
     runs-on: ubuntu-latest
     steps:
-      - uses: folio-org/checkout@v2
-        with:
-          fetch-depth: 0
+      - uses: folio-org/checkout@v3
 
       - name: Setup kernel for react native, increase watchers
         run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
