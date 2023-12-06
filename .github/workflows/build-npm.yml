@@ -19,13 +19,13 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: $NODEJS_VERSION
+          node-version: ${{ env.NODEJS_VERSION }}
           registry-url: 'https://npm.pkg.github.com'
           scope: '@reshare'
 
       - name: Set yarn config
         run: |
-          yarn config set @folio:registry $FOLIO_NPM_REGISTRY
-          yarn config set @reshare:registry $RESHARE_NPM_REGISTRY
+          yarn config set @folio:registry ${{ env.FOLIO_NPM_REGISTRY }}
+          yarn config set @reshare:registry ${{ env.RESHARE_NPM_REGISTRY }}
 
       - run: yarn install
