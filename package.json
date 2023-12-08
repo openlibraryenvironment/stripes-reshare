@@ -1,8 +1,11 @@
 {
-  "name": "@reshare/stripes-reshare",
+  "name": "@openlibraryenvironment/stripes-reshare",
   "version": "1.11.1",
   "description": "Common elements used by ReShare's Stripes modules",
-  "repository": "openlibraryenvironment/stripes-reshare",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openlibraryenvironment/stripes-reshare.git"
+  },
   "license": "Apache-2.0",
   "scripts": {
     "lint": "eslint ./src"
@@ -10,6 +13,9 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
   },
   "peerDependencies": {
     "@folio/stripes": "^5.0.0 || ^6.1.0 || ^7.0.0",
