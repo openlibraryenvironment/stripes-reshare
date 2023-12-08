@@ -10,4 +10,4 @@ To prepare for a release, create a release branch. We use the naming convention 
 
 1. Select "Draft a new release" from the GitHub release management page here: https://github.com/openlibraryenvironment/stripes-reshare/releases
 
-1. Choose the appropriate tag, and write up the changes. When you publish the release CI will publish the package to the GitHub npm repository npm.pkg.github.com.
+1. Choose the appropriate tag, and write up the changes. When you publish the release CI will publish the package to https://registry.npmjs.org under the @projectreshare scope.
