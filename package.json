@@ -1,5 +1,5 @@
 {
-  "name": "@openlibraryenvironment/stripes-reshare",
+  "name": "@projectreshare/stripes-reshare",
   "version": "1.11.1",
   "description": "Common elements used by ReShare's Stripes modules",
   "repository": {

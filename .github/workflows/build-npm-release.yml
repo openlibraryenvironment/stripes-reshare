@@ -8,7 +8,7 @@ jobs:
   build:
     env:
       FOLIO_NPM_REGISTRY: 'https://repository.folio.org/repository/npm-folioci/'
-      RESHARE_NPM_REGISTRY: 'https://npm.pkg.github.com'
+      RESHARE_NPM_REGISTRY: 'https://registry.npmjs.org'
       NODEJS_VERSION: '16'
 
     runs-on: ubuntu-latest
@@ -21,16 +21,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODEJS_VERSION }}
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@openlibraryenvironment'
+          registry-url: ${{ env.RESHARE_NPM_REGISTRY }}
+          scope: '@projectreshare'
 
       - name: Set yarn config
         run: |
           yarn config set @folio:registry ${{ env.FOLIO_NPM_REGISTRY }}
-          yarn config set @reshare:registry ${{ env.RESHARE_NPM_REGISTRY }}
+          yarn config set @projectreshare:registry ${{ env.RESHARE_NPM_REGISTRY }}
 
       - run: yarn install
 
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
