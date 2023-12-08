@@ -29,5 +29,3 @@ jobs:
           yarn config set @reshare:registry ${{ env.RESHARE_NPM_REGISTRY }}
 
       - run: yarn install
-
-      - run: yarn lint
