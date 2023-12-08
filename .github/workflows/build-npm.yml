@@ -1,0 +1,33 @@
+name: Build NPM
+
+on:
+  push:
+
+jobs:
+  build:
+    env:
+      FOLIO_NPM_REGISTRY: 'https://repository.folio.org/repository/npm-folioci/'
+      RESHARE_NPM_REGISTRY: 'https://npm.pkg.github.com'
+      NODEJS_VERSION: '16'
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODEJS_VERSION }}
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@openlibraryenvironment'
+
+      - name: Set yarn config
+        run: |
+          yarn config set @folio:registry ${{ env.FOLIO_NPM_REGISTRY }}
+          yarn config set @reshare:registry ${{ env.RESHARE_NPM_REGISTRY }}
+
+      - run: yarn install
+
+      - run: yarn lint
