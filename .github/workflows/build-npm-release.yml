@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: ${{ env.NODEJS_VERSION }}
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@reshare'
+          scope: '@openlibraryenvironment'
 
       - name: Set yarn config
         run: |
@@ -31,6 +31,6 @@ jobs:
 
       - run: yarn install
 
-      - run: yarn publish
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

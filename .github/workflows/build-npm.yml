@@ -1,4 +1,4 @@
-name: Publish release npm
+name: Build NPM
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: ${{ env.NODEJS_VERSION }}
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@reshare'
+          scope: '@openlibraryenvironment'
 
       - name: Set yarn config
         run: |

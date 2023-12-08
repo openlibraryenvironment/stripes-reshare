@@ -1,5 +1,5 @@
 {
-  "name": "@reshare/stripes-reshare",
+  "name": "@openlibraryenvironment/stripes-reshare",
   "version": "1.12.0",
   "description": "Common elements used by ReShare's Stripes modules",
   "repository": "openlibraryenvironment/stripes-reshare",
@@ -10,6 +10,9 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
   },
   "peerDependencies": {
     "@folio/stripes": "^6.1.0 || ^7.0.0 || ^8.0.0",
