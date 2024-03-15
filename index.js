@@ -21,3 +21,4 @@ export { default as usePerformAction } from './src/usePerformAction';
 // Utilities
 export * as inventoryTypeIds from './src/inventoryTypeIds';
 export { default as upNLevels } from './src/upNLevels';
+export { default as selectifyRefdata } from './src/selectifyRefdata';
