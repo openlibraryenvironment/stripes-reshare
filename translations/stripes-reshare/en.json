@@ -113,10 +113,26 @@
   "states.RES_CANCEL_REQUEST_RECEIVED": "Cancel request received",
   "states.RES_OVERDUE": "Overdue",
   "states.RES_NOT_SUPPLIED": "Could not supply",
-
   "states.RES_SEQUESTERED": "Item sequestered",
   "states.RES_LOANED_DIGITALLY": "Loaned digitally",
   "states.RES_AWAIT_DESEQUESTRATION": "Awaiting desequestration",
+
+  "states.SLNP_REQ_IDLE": "New",
+  "states.SLNP_REQ_CANCELLED": "Cancelled",
+  "states.SLNP_REQ_ABORTED": "Aborted",
+  "states.SLNP_REQ_SHIPPED": "Shipped",
+  "states.SLNP_REQ_CHECKED_IN": "In local circulation process",
+  "states.SLNP_REQ_AWAITING_RETURN_SHIPPING": "Awaiting return shipping",
+  "states.SLNP_REQ_COMPLETE": "Request has been completed successfully.",
+
+  "states.SLNP_RES_IDLE": "New",
+  "states.SLNP_RES_UNFILLED": "Not supplied",
+  "states.SLNP_RES_ABORTED": "Aborted",
+  "states.SLNP_RES_NEW_AWAIT_PULL_SLIP": "Awaiting pull slip printing",
+  "states.SLNP_RES_AWAIT_PICKING": "Searching",
+  "states.SLNP_RES_AWAIT_SHIP": "Awaiting shipping",
+  "states.SLNP_RES_ITEM_SHIPPED": "Shipped",
+  "states.SLNP_RES_COMPLETE": "Request is complete",
 
   "states.undefined": "ERROR: State undefined",
 
