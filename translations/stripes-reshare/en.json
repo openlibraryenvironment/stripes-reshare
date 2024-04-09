@@ -16,6 +16,7 @@
   "actions.requesterApproveDuplicate.error" : "Failed to approve duplicate request. {errMsg}",
   "actions.requesterBypassValidation" : "Approve request as is",
   "actions.requesterCancel" : "Cancel request",
+  "actions.slnpHandleAbort" : "Cancel request",
   "actions.requesterCancelDuplicate": "Cancel duplicate request",
   "actions.requesterCancelDuplicate.success" : "Cancelled duplicate request",
   "actions.requesterCancelDuplicate.error" : "Failed to cancel duplicate request. {errMsg}",
@@ -23,6 +24,7 @@
   "actions.requesterMarkEndOfRotaReviewed.success": "Successfully marked reviewed.",
   "actions.requesterMarkEndOfRotaReviewed.error": "Error marking request reviewed. {errMsg}",
   "actions.requesterReceived": "Mark received",
+  "actions.slnpRequesterReceived": "Mark received",
   "actions.requesterReceived.success": "Successfully marked request received.",
   "actions.requesterReceived.error": "Error marking request received. {errMsg}",
   "actions.requesterRetryValidation" : "Update and resubmit request",
@@ -50,6 +52,8 @@
   "actions.supplierMarkShipped.success": "Successfully marked request shipped.",
   "actions.supplierMarkShipped.error": "Error marking request shipped. {errMsg}",
   "actions.supplierPrintPullSlip": "Mark pull slip printed",
+  "actions.slnpPrintPullSlip": "Mark pull slip printed",
+  "actions.slnpAbortSupply": "Abort Supply",
   "actions.supplierPrintPullSlip.success": "Succesfully marked pull slip printed.",
   "actions.supplierPrintPullSlip.error": "Error marking pull slip printed. {errMsg}",
   "actions.supplierRespondToCancel": "Respond to cancellation",
@@ -177,4 +181,3 @@
   "settings.finishEditing": "Finish editing",
   "settings.valueFor": "Value for setting {name}"
 }
-
