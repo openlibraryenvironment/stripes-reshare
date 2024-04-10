@@ -70,7 +70,7 @@
   "actions.localSupplierCannotSupply": "Respond \"cannot supply\"",
   "actions.localSupplierCannotSupply.success": "Successfully responded \"cannot supply\"",
   "actions.localSupplierCannotSupply.error": "Error responding \"cannot supply\" {errMsg}",
-  "actions.itemReturned": "Scan request ID to mark request returned",
+  "actions.itemReturned": "Mark request returned",
 
   "states.REQ_IDLE": "New",
   "states.REQ_VALIDATED": "Validated",
