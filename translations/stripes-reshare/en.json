@@ -131,6 +131,7 @@
   "states.SLNP_REQ_AWAITING_RETURN_SHIPPING": "Awaiting return shipping",
   "states.SLNP_REQ_COMPLETE": "Request has been completed successfully.",
   "states.SLNP_REQ_ITEM_LOST": "Item has been lost",
+  "states.SLNP_REQ_PATRON_INVALID": "Patron is invalid",
 
   "states.SLNP_RES_IDLE": "New",
   "states.SLNP_RES_UNFILLED": "Not supplied",
