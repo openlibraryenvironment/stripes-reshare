@@ -71,6 +71,7 @@
   "actions.localSupplierCannotSupply.success": "Successfully responded \"cannot supply\"",
   "actions.localSupplierCannotSupply.error": "Error responding \"cannot supply\" {errMsg}",
   "actions.itemReturned": "Mark request returned",
+  "actions.slnpMarkItemLost": "Mark item lost",
 
   "states.REQ_IDLE": "New",
   "states.REQ_VALIDATED": "Validated",
@@ -129,6 +130,8 @@
   "states.SLNP_REQ_CHECKED_IN": "In local circulation process",
   "states.SLNP_REQ_AWAITING_RETURN_SHIPPING": "Awaiting return shipping",
   "states.SLNP_REQ_COMPLETE": "Request has been completed successfully.",
+  "states.SLNP_REQ_ITEM_LOST": "Item has been lost",
+  "states.SLNP_REQ_PATRON_INVALID": "Patron is invalid",
 
   "states.SLNP_RES_IDLE": "New",
   "states.SLNP_RES_UNFILLED": "Not supplied",
