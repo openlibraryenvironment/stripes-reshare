@@ -5,6 +5,19 @@
   "actions.generic.success": "Success: {action}",
   "actions.generic.error": "Error: {action}. {errMsg}",
 
+  "actions.nonreturnableRequesterBypassValidation": "Approve request as is",
+  "actions.nonreturnableRequesterCancel": "Cancel request",
+  "actions.nonreturnableRequesterCompleteRequest": "Complete request",
+  "actions.nonreturnableRequesterMarkEndOfRotaReviewed": "Mark reviewed",
+  "actions.nonreturnableRequesterRetryValidation": "Update and resubmit request",
+
+  "actions.nonreturnableSupplierAddURLToDocument": "Supply URL",
+  "actions.nonreturnableSupplierAddURLToDocument.success": "Successfully supplied URL",
+  "actions.nonreturnableSupplierAddURLToDocument.error": "Error supplying URL",
+  "actions.nonreturnableSupplierPrintPullSlip": "Mark pull slip printed",
+  "actions.nonreturnableSupplierRespondYes": "Respond 'will supply'",
+  "actions.nonreturnableSupplierRespondCannotSupply": "Respond 'cannnot supply'",
+
   "actions.patronReturnedItem": "Mark returned by patron",
   "actions.patronReturnedItem.success": "Successfully marked request returned by patron.",
   "actions.patronReturnedItem.error": "Error marking request returned by patron. {errMsg}",
@@ -122,6 +135,8 @@
   "states.RES_SEQUESTERED": "Item sequestered",
   "states.RES_LOANED_DIGITALLY": "Loaned digitally",
   "states.RES_AWAIT_DESEQUESTRATION": "Awaiting desequestration",
+  "states.RES_DOCUMENT_DELIVERED": "Document delivered",
+  "states.RES_COPY_AWAIT_PICKING": "Copy Await Picking",
 
   "states.SLNP_REQ_IDLE": "New",
   "states.SLNP_REQ_CANCELLED": "Cancelled",
