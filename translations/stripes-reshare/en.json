@@ -114,6 +114,7 @@
   "states.REQ_DUPLICATE_REVIEW": "Requires review - possible duplicate",
   "states.REQ_BLANK_FORM_REVIEW": "Requires review - blank form",
   "states.REQ_OVER_LIMIT": "Request over limit",
+  "states.REQ_DOCUMENT_DELIVERED" : "Document delivered",
 
   "states.RES_IDLE": "New",
   "states.RES_NEW_AWAIT_PULL_SLIP": "Awaiting pull slip printing",
