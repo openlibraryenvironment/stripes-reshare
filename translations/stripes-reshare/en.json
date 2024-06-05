@@ -11,12 +11,10 @@
   "actions.nonreturnableRequesterMarkEndOfRotaReviewed": "Mark reviewed",
   "actions.nonreturnableRequesterRetryValidation": "Update and resubmit request",
 
-  "actions.nonreturnableSupplierAddURLToDocument": "Supply URL",
-  "actions.nonreturnableSupplierAddURLToDocument.success": "Successfully supplied URL",
-  "actions.nonreturnableSupplierAddURLToDocument.error": "Error supplying URL",
+  "actions.nonreturnableSupplierAddURLToDocument": "Enter URL to fill this request",
   "actions.nonreturnableSupplierPrintPullSlip": "Mark pull slip printed",
   "actions.nonreturnableSupplierRespondYes": "Respond 'will supply'",
-  "actions.nonreturnableSupplierRespondCannotSupply": "Respond 'cannnot supply'",
+  "actions.nonreturnableSupplierRespondCannotSupply": "Respond 'cannot supply'",
 
   "actions.patronReturnedItem": "Mark returned by patron",
   "actions.patronReturnedItem.success": "Successfully marked request returned by patron.",
@@ -136,7 +134,7 @@
   "states.RES_LOANED_DIGITALLY": "Loaned digitally",
   "states.RES_AWAIT_DESEQUESTRATION": "Awaiting desequestration",
   "states.RES_DOCUMENT_DELIVERED": "Document delivered",
-  "states.RES_COPY_AWAIT_PICKING": "Copy Await Picking",
+  "states.RES_COPY_AWAIT_PICKING": "Searching",
 
   "states.SLNP_REQ_IDLE": "New",
   "states.SLNP_REQ_CANCELLED": "Cancelled",
