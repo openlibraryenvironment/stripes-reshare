@@ -13,8 +13,8 @@
 
   "actions.nonreturnableSupplierAddURLToDocument": "Enter URL to fill this request",
   "actions.nonreturnableSupplierPrintPullSlip": "Mark pull slip printed",
-  "actions.nonreturnableSupplierRespondYes": "Respond 'will supply'",
-  "actions.nonreturnableSupplierRespondCannotSupply": "Respond 'cannot supply'",
+  "actions.nonreturnableSupplierRespondYes": "Respond 'Will supply'",
+  "actions.nonreturnableSupplierRespondCannotSupply": "Respond 'Cannot supply'",
 
   "actions.patronReturnedItem": "Mark returned by patron",
   "actions.patronReturnedItem.success": "Successfully marked request returned by patron.",
