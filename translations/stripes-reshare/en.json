@@ -146,6 +146,8 @@
   "states.SLNP_REQ_COMPLETE": "Request has been completed successfully.",
   "states.SLNP_REQ_ITEM_LOST": "Item has been lost",
   "states.SLNP_REQ_PATRON_INVALID": "Patron is invalid",
+  "states.SLNP_REQ_DOCUMENT_AVAILABLE": "Document available",
+  "states.SLNP_REQ_DOCUMENT_SUPPLIED": "Document has been successfully supplied",
 
   "states.SLNP_RES_IDLE": "New",
   "states.SLNP_RES_UNFILLED": "Not supplied",
@@ -155,6 +157,7 @@
   "states.SLNP_RES_AWAIT_SHIP": "Awaiting shipping",
   "states.SLNP_RES_ITEM_SHIPPED": "Shipped",
   "states.SLNP_RES_COMPLETE": "Request is complete",
+  "states.SLNP_RES_DOCUMENT_SUPPLIED": "Document supplied",
 
   "states.undefined": "ERROR: State undefined",
 
