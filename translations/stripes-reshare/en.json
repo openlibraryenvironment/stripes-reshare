@@ -83,6 +83,8 @@
   "actions.localSupplierCannotSupply.error": "Error responding \"cannot supply\" {errMsg}",
   "actions.itemReturned": "Mark request returned",
   "actions.slnpMarkItemLost": "Mark item lost",
+  "actions.slnpSupplierSuppliesDocument": "Supply document",
+  "actions.slnpSupplierSuppliesDocument.success": "Document supplied successfully",
 
   "states.REQ_IDLE": "New",
   "states.REQ_VALIDATED": "Validated",
