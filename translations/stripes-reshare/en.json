@@ -85,7 +85,7 @@
   "actions.slnpMarkItemLost": "Mark item lost",
   "actions.slnpSupplierSuppliesDocument": "Supply document",
   "actions.slnpSupplierSuppliesDocument.success": "Document supplied successfully",
-  "actions.slnpNonreturnableRespondYes": "Respond 'Will Supply'",
+  "actions.slnpNonreturnableRespondYes": "Respond \"Will Supply\"",
 
   "states.REQ_IDLE": "New",
   "states.REQ_VALIDATED": "Validated",
