@@ -10,6 +10,8 @@
   "actions.nonreturnableRequesterCompleteRequest": "Complete request",
   "actions.nonreturnableRequesterMarkEndOfRotaReviewed": "Mark reviewed",
   "actions.nonreturnableRequesterRetryValidation": "Update and resubmit request",
+  "actions.nonreturnableRequesterRetryValidation.success" : "Successfully resubmitted updated request",
+  "actions.nonreturnableRequesterRetryValidation.error" : "Error resubmitting updated request",
 
   "actions.nonreturnableSupplierAddURLToDocument": "Enter URL to fill this request",
   "actions.nonreturnableSupplierPrintPullSlip": "Mark pull slip printed",
