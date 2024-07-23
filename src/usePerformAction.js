@@ -26,7 +26,7 @@ export default (hookReqId) => {
     if (typeof reqId === 'string') id = reqId;
     else if (typeof reqId === 'object') {
       // when given a whole request ensure action is valid
-      if (!reqId?.validActions?.includes(action)) {
+      if (!reqId?.validActions?.some(a => a.actionCode === action)) {
         throw new Error(intl.formatMessage({ id: 'stripes-reshare.action.notValidForState' }));
       }
       id = reqId.id;
