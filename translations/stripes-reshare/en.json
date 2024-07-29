@@ -89,6 +89,7 @@
   "actions.slnpSupplierSuppliesDocument.success": "Document supplied successfully",
   "actions.slnpNonreturnableRespondYes": "Respond \"Will Supply\"",
   "actions.manuallyMarkSupplied": "Mark supplied",
+  "actions.manuallyMarkAvailable": "Mark available",
 
   "states.REQ_IDLE": "New",
   "states.REQ_VALIDATED": "Validated",
