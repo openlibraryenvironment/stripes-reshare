@@ -37,7 +37,7 @@
   "actions.requesterMarkEndOfRotaReviewed.success": "Successfully marked reviewed.",
   "actions.requesterMarkEndOfRotaReviewed.error": "Error marking request reviewed. {errMsg}",
   "actions.requesterReceived": "Mark received",
-  "actions.slnpRequesterReceived": "mark it received",
+  "actions.slnpRequesterReceived": "Mark supplied",
   "actions.requesterReceived.success": "Successfully marked request received.",
   "actions.requesterReceived.error": "Error marking request received. {errMsg}",
   "actions.requesterRetryValidation" : "Update and resubmit request",
