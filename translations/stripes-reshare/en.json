@@ -37,7 +37,7 @@
   "actions.requesterMarkEndOfRotaReviewed.success": "Successfully marked reviewed.",
   "actions.requesterMarkEndOfRotaReviewed.error": "Error marking request reviewed. {errMsg}",
   "actions.requesterReceived": "Mark received",
-  "actions.slnpRequesterReceived": "Mark supplied",
+  "actions.slnpRequesterReceived": "mark it received",
   "actions.requesterReceived.success": "Successfully marked request received.",
   "actions.requesterReceived.error": "Error marking request received. {errMsg}",
   "actions.requesterRetryValidation" : "Update and resubmit request",
@@ -90,6 +90,7 @@
   "actions.slnpNonreturnableRespondYes": "Respond \"Will Supply\"",
   "actions.manuallyMarkSupplied": "Mark supplied",
   "actions.manuallyMarkAvailable": "Mark available",
+  "actions.slnpNonReturnableRequesterReceived": "Mark supplied",
 
   "states.REQ_IDLE": "New",
   "states.REQ_VALIDATED": "Validated",
