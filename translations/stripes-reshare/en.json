@@ -91,6 +91,8 @@
   "actions.manuallyMarkSupplied": "Mark supplied",
   "actions.manuallyMarkAvailable": "Mark available",
   "actions.slnpNonReturnableRequesterReceived": "Mark supplied",
+  "actions.slnpSupplierFillAndMarkShipped.success": "Successfully filled and shipped the request",
+  "actions.slnpSupplierFillAndMarkShipped.error": "Error filling and marking shipped {errMsg}",
 
   "states.REQ_IDLE": "New",
   "states.REQ_VALIDATED": "Validated",
