@@ -1,5 +1,5 @@
 {
-  "hasLocalNote": "Has local note",
+  "hasLocalNote": "Has internal note",
   "hasPatronNote": "Has patron note",
   "requestState": "Request state",
 
@@ -20,9 +20,9 @@
   "actions.nonreturnableSupplierRespondYes": "Respond 'Will Supply'",
   "actions.nonreturnableSupplierRespondCannotSupply": "Respond 'Cannot Supply'",
 
-  "actions.localNote": "Edit local note",
-  "actions.localNote.success": "Local note updated",
-  "actions.localNote.error": "Error updating local note",
+  "actions.localNote": "Edit internal note",
+  "actions.localNote.success": "Internal note updated",
+  "actions.localNote.error": "Error updating internal note",
   "actions.patronReturnedItem": "Mark returned by patron",
   "actions.patronReturnedItem.success": "Successfully marked request returned by patron.",
   "actions.patronReturnedItem.error": "Error marking request returned by patron. {errMsg}",
