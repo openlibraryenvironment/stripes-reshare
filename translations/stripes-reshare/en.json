@@ -98,6 +98,7 @@
   "actions.slnpNonReturnableRequesterReceived": "Mark supplied",
   "actions.slnpSupplierFillAndMarkShipped.success": "Successfully filled and shipped the request",
   "actions.slnpSupplierFillAndMarkShipped.error": "Error filling and marking shipped {errMsg}",
+  "actions.slnpRespondYes": "Respond \"Will Supply\"",
 
   "states.REQ_IDLE": "New",
   "states.REQ_VALIDATED": "Validated",
