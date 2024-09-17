@@ -63,6 +63,8 @@
   "actions.supplierCheckOutOfReshare": "Complete request",
   "actions.supplierCheckOutOfReshare.success": "Successfully completed request",
   "actions.supplierCheckOutOfReshare.error": "Error completing request. {errMsg}",
+  "actions.slnpSupplierCheckOutOfReshare.success": "Successfully completed request",
+  "actions.slnpSupplierCheckOutOfReshare.error": "Error completing request. {errMsg}",
   "actions.supplierManualCheckout": "Mark item checked out",
   "actions.supplierManualCheckout.error": "Error marking item checked out. {errMsg}",
   "actions.supplierManualCheckout.success": "Successfully marked item checked out",
