@@ -34,7 +34,7 @@
   "actions.requesterApproveDuplicate.error" : "Failed to approve duplicate request. {errMsg}",
   "actions.requesterBypassValidation" : "Approve request as is",
   "actions.requesterCancel" : "Cancel request",
-  "actions.slnpHandleAbort" : "Cancel request",
+  "actions.slnpHandleAbort" : "Mark cancelled",
   "actions.requesterCancelDuplicate": "Cancel duplicate request",
   "actions.requesterCancelDuplicate.success" : "Cancelled duplicate request",
   "actions.requesterCancelDuplicate.error" : "Failed to cancel duplicate request. {errMsg}",
