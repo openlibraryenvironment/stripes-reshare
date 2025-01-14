@@ -42,7 +42,7 @@
   "actions.requesterMarkEndOfRotaReviewed.success": "Erfolgreich als überprüft gekennzeichnet",
   "actions.requesterMarkEndOfRotaReviewed.error": "Fehler bei der Kennzeichnung als überprüft. {errMsg}",
   "actions.requesterReceived": "Als Eingegangen kennzeichnen",
-  "actions.slnpRequesterReceived": "Eingang kennzeichnen",
+  "actions.slnpRequesterReceived": "den Eingang zu kennzeichnen",
   "actions.requesterReceived.success": "Bestellung erfolgreich als eingangangen markiert.",
   "actions.requesterReceived.error": "Fehler bei Markierung der Bestellung als Eingegangen. {errMsg}",
   "actions.requesterRetryValidation" : "Aktualisieren und Bestellung erneut übertragen",
