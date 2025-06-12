@@ -4,7 +4,7 @@
   "requestState": "Bestellstatus",
 
   "action.notValidForState": "Aktion in diesem Status nicht möglich",
-  "actions.generic.success": "Erfolg: {action}",
+  "actions.generic.success": "Bestätigung: {action}",
   "actions.generic.error": "Fehler: {action}. {errMsg}",
 
   "actions.nonreturnableRequesterBypassValidation": "Bestellung unverändert übernehmen",
@@ -42,7 +42,7 @@
   "actions.requesterMarkEndOfRotaReviewed.success": "Erfolgreich als überprüft gekennzeichnet",
   "actions.requesterMarkEndOfRotaReviewed.error": "Fehler bei der Kennzeichnung als überprüft. {errMsg}",
   "actions.requesterReceived": "Als Eingegangen kennzeichnen",
-  "actions.slnpRequesterReceived": "den Eingang zu kennzeichnen",
+  "actions.slnpRequesterReceived": "Durchführung der Eingangsverbuchung",
   "actions.requesterReceived.success": "Bestellung erfolgreich als eingangangen markiert.",
   "actions.requesterReceived.error": "Fehler bei Markierung der Bestellung als Eingegangen. {errMsg}",
   "actions.requesterRetryValidation" : "Aktualisieren und Bestellung erneut übertragen",
