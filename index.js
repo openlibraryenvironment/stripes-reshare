@@ -16,6 +16,8 @@ export { default as useIntlCallout } from './src/useIntlCallout';
 export { default as useIsActionPending } from './src/useIsActionPending';
 export { useOkapiQuery, useOkapiQueryConfig } from './src/useOkapiQuery';
 export { default as usePerformAction } from './src/usePerformAction';
+export { default as useSetting } from './src/useSetting';
+export { default as useSettings } from './src/useSettings';
 
 
 // Utilities
