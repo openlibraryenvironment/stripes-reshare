@@ -3,7 +3,7 @@ import { useOkapiQuery } from './useOkapiQuery';
 /**
  * A useOkapiQuery for all the settings
  */
-const useSettings = (key, whole=false) => {
+const useSettings = () => {
   return useOkapiQuery('rs/settings/appSettings', {
     searchParams: {
       // the presenece of a filter containing "hidden" includes hidden settings
