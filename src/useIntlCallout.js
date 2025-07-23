@@ -5,7 +5,7 @@
  * ...where translationKey is the message and valuesToTranslate indicate which
  * properties of values are in fact translation keys that must first be translated
  * before passing into formatMessage.
- * 
+ *
  * Timeout is in ms.
  */
 
